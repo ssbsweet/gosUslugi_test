@@ -19,3 +19,13 @@ class SearchPageLocators:
 class PassportPageLocators:
     BACK_BUTTON = (By.CSS_SELECTOR, ".btn-sec.larr_svg.ng-scope.small")
     BACK_TO_CATALOG_BUTTON = (By.CSS_SELECTOR, ".btn-sec.small.larr")
+
+class CatalogPageLocators:
+    CATALOG_PAGE_NAME = (By.CSS_SELECTOR, ".h1.offset-top-none.offset-bottom-md.light.ng-binding.ng-scope")
+
+class DriverLicensePageLocators:
+    WEBSITE_OF_THE_TRAFFIC = (By.CSS_SELECTOR, "a:contains('http://www.gibdd.ru/r/77/drivingschools/')@href")
+
+class TrafficPageLocators:
+    GO_TO_MVD_ROSSII_SITE = (By.CSS_SELECTOR, ".bn-federal-site:nth-child(11) li:nth-child(3)")
+

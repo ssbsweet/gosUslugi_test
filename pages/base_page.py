@@ -12,11 +12,14 @@ class BasePage():
     def __init__(self, driver, url, timeout=10):
         self.driver = driver
         self.url = url
-        # self.driver.implicitly_wait(timeout)
 
     def go_to_main_page(self):
         link = self.driver.find_element(*BasePageLocators.SITE_LOGO)
         link.click()
+
+    def go_to_getting_a_driver_license_first_time_page(self):
+        link = "https://www.gosuslugi.ru/situation/obtaining_drivers_license_first_time"
+        link.open()
 
     def is_not_element_present(self, how, what, timeout=4):
         try:
@@ -49,3 +52,9 @@ class BasePage():
                                                                      ' probably unauthorised user'
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
+
+    def close_last_tab(self):
+        if (len(self.driver.window_handles) == 2):
+            self.driver.switch_to.window(driver.window_handles[-1])
+            self.driver.close()
+            self.driver.switch_to.window(driver.window_handles[0])
