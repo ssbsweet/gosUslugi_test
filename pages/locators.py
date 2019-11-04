@@ -29,3 +29,9 @@ class DriverLicensePageLocators:
 class TrafficPageLocators:
     GO_TO_MVD_ROSSII_SITE = (By.CSS_SELECTOR, ".bn-federal-site:nth-child(11) li:nth-child(3)")
 
+class MvdPageLocators:
+    MVD_MENU_BUTTON = (By.CSS_SELECTOR, "#menu-1 > li:nth-child(1) > a")
+    MVD_MENU_DOCUMENTS_BUTTON = (By.CSS_SELECTOR, ".active li:nth-child(9) > a")
+    MVD_DOCUMENTS_PAGE_ANOTHER_DOCUMENTS = (By.CSS_SELECTOR, ".ul-sub-list > li:nth-child(11) > a")
+    MVD_ANOTHER_DOCUMENTS_PAGE_RANDOM_DOCUMENT = (By.CSS_SELECTOR, "tr:nth-child(1) .file_a")
+
