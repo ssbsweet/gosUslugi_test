@@ -45,7 +45,9 @@ def test_all_test_work_2(driver):
     mvdDocuments.open_and_go_to_documents()
     mvdDocuments.download_document()
     mvdDocuments.is_file_exist()
+    time.sleep(2)
     mvdDocuments.remove_file()
+    time.sleep(2)
 
 
 

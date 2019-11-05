@@ -1,3 +1,5 @@
+import time
+
 from .base_page import BasePage
 from .locators import MvdDocumentsPageLocators
 
@@ -9,3 +11,4 @@ class MvdDocumentsPage(BasePage):
     def download_document(self):
         documents_button = self.driver.find_element(*MvdDocumentsPageLocators.MVD_ANOTHER_DOCUMENTS_PAGE_RANDOM_DOCUMENT)
         documents_button.click()
+        time.sleep(5)

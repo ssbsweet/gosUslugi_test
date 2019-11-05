@@ -14,11 +14,11 @@ class SearchFormLoactors:
     PASSPORT_OF_A_NEW_GENERATION_OF_18_YEARS = (By.CSS_SELECTOR, ".dropdown-el__li:nth-child(3)")
 
 class SearchPageLocators:
-    PASSPORT_OF_A_NEW_GENERATION_OF_18_YEARS = (By.CSS_SELECTOR, "#content > div.ng-scope > div > div.result_search.limiter.ng-scope > div.details > div:nth-child(3) > div > span > a")
+    PASSPORT_OF_A_NEW_GENERATION_OF_18_YEARS = (By.CSS_SELECTOR, "#content > div.ng-scope > div > div.result_search.limiter.ng-scope > div.details > div:nth-child(2) > div > span > a > em")
 
 class PassportPageLocators:
     BACK_BUTTON = (By.CSS_SELECTOR, ".btn-sec.larr_svg.ng-scope.small")
-    BACK_BUTTON_2 = (By.CSS_SELECTOR, ".btn-sec.small.larr_svg")
+    BACK_BUTTON_2 = (By.CSS_SELECTOR, "#content > div.ng-scope > div.content-center-box.passport.ng-scope > div > div > div > div.handcraft-zero-step.limiter.ng-scope > div.relative.span_24 > div > div.span_17.col-8 > div.passport-title.clearfix > a")
     BACK_TO_CATALOG_BUTTON = (By.CSS_SELECTOR, ".btn-sec.small.larr")
 
 class CatalogPageLocators:
